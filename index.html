@@ -16,11 +16,12 @@
       }
 
       h1 {
-        color: #ffffff; /* white text */
-        text-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff; /* white glow */
+        color: #ffffff;
+        text-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff;
+        animation: titleGlowShift 10s infinite ease-in-out;
       }
 
-      /* border + box glow color shifting animation */
+      /* border + glow color animation */
       @keyframes borderShift {
         0% {
           border-color: #00ffee;
@@ -33,6 +34,26 @@
         100% {
           border-color: #00ffee;
           box-shadow: 0 0 20px #00ffee, 0 0 40px #00ffee;
+        }
+      }
+
+      /* title glow syncing slightly w border */
+      @keyframes titleGlowShift {
+        0% {
+          color: #ffffff;
+          text-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff;
+        }
+        45% {
+          color: #ffd6d6; /* light reddish-white tint */
+          text-shadow: 0 0 10px #ff8080, 0 0 20px #ff4d4d;
+        }
+        55% {
+          color: #ffd6d6;
+          text-shadow: 0 0 10px #ff8080, 0 0 20px #ff4d4d;
+        }
+        100% {
+          color: #ffffff;
+          text-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff;
         }
       }
 
