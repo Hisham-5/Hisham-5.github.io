@@ -12,7 +12,7 @@
         border: 3px solid #00ffee; /* border color */
         box-shadow: 0 0 20px #00ffee; /* glowing border */
         margin: 40px; /* space around */
-        animation: pulseGlow 3s infinite alternate; /* border glow animation */
+        animation: pulseGlow 2s infinite alternate; /* border glow animation */
       }
 
       h1 {
@@ -28,20 +28,20 @@
       /* Border glow animation */
       @keyframes pulseGlow {
         from {
-          box-shadow: 0 0 10px #00ffee; /* smaller glow */
+          box-shadow: 0 0 15px #00ffee; /* smaller glow */
         }
         to {
-          box-shadow: 0 0 40px #00ffee; /* larger glow */
+          box-shadow: 0 0 45px #00ffee; /* larger glow */
         }
       }
 
       /* Text glow animation */
       @keyframes pulseText {
         from {
-          text-shadow: 0 0 10px #00ffee, 0 0 20px #00ffee;
+          text-shadow: 0 0 15px #00ffee, 0 0 20px #00ffee;
         }
         to {
-          text-shadow: 0 0 20px #00ffee, 0 0 40px #00ffee;
+          text-shadow: 0 0 25px #00ffee, 0 0 40px #00ffee;
         }
       }
     </style>
