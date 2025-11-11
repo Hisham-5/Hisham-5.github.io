@@ -12,58 +12,58 @@
         font-family: Arial, sans-serif;
         text-align: center;
         padding: 60px;
-        border: 3px solid #00ffee; /* border color */
-        box-shadow: 0 0 20px #00ffee; /* glow */
+        border: 3px solid #ff0033; /* red border */
+        box-shadow: 0 0 20px #ff0033; /* red glow */
         margin: 40px;
         border-radius: 12px;
         animation: pulseGlow 3s infinite alternate; /* border glow anim */
       }
 
       h1 {
-        color: #00ffee;
-        text-shadow: 0 0 10px #00ffee, 0 0 20px #00ffee;
+        color: #ff0033; /* neon red text */
+        text-shadow: 0 0 10px #ff0033, 0 0 20px #ff0033; /* glowing effect */
         animation: pulseText 2.5s infinite alternate; /* text glow anim */
       }
 
       p {
         line-height: 1.6;
-        max-width: 600px; /* keep text centered and tidy */
-        margin: 0 auto; /* center horizontally */
+        max-width: 600px;
+        margin: 0 auto;
       }
 
       /* --- Border animation --- */
       @keyframes pulseGlow {
         from {
-          box-shadow: 0 0 10px #00ffee;
+          box-shadow: 0 0 10px #ff0033;
         }
         to {
-          box-shadow: 0 0 40px #00ffee;
+          box-shadow: 0 0 40px #ff0033;
         }
       }
 
       /* --- Text animation --- */
       @keyframes pulseText {
         from {
-          text-shadow: 0 0 10px #00ffee, 0 0 20px #00ffee;
+          text-shadow: 0 0 10px #ff0033, 0 0 20px #ff0033;
         }
         to {
-          text-shadow: 0 0 20px #00ffee, 0 0 40px #00ffee;
+          text-shadow: 0 0 20px #ff0033, 0 0 40px #ff0033;
         }
       }
 
       /* --- RESPONSIVE SECTION --- */
       @media (max-width: 768px) {
         body {
-          padding: 30px; /* less padding for smaller screens */
+          padding: 30px;
           margin: 20px;
         }
 
         h1 {
-          font-size: 1.8rem; /* shrink title a bit */
+          font-size: 1.8rem;
         }
 
         p {
-          font-size: 1rem; /* smaller text */
+          font-size: 1rem;
           max-width: 90%;
         }
       }
@@ -87,7 +87,7 @@
   </head>
 
   <body>
-    <h1> Hisham’s Website </h1>
+    <h1>⚡ Hisham’s Website ⚡</h1>
     <p>
       My name is <b>Hisham Mohiuddin.</b><br>
       Ik this website isn't much yet, but I’m just in 11th and tryna make it better 😭🙃<br>
