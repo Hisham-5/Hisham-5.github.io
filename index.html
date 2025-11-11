@@ -12,33 +12,27 @@
         border: 3px solid #00ffee;
         box-shadow: 0 0 20px #00ffee;
         margin: 40px;
+        animation: borderShift 10s infinite ease-in-out;
       }
 
       h1 {
-        color: #00ffee;
-        text-shadow: 0 0 10px #00ffee, 0 0 20px #00ffee;
-        animation: glowShift 10s infinite ease-in-out;
+        color: #ffffff; /* white text */
+        text-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff; /* white glow */
       }
 
-      /* The color + glow pulsing animation */
-      @keyframes glowShift {
+      /* border + box glow color shifting animation */
+      @keyframes borderShift {
         0% {
-          color: #00ffee;
-          text-shadow: 0 0 10px #00ffee, 0 0 20px #00ffee;
-        }
-        25% {
-          text-shadow: 0 0 20px #00ffee, 0 0 40px #00ffee;
+          border-color: #00ffee;
+          box-shadow: 0 0 20px #00ffee, 0 0 40px #00ffee;
         }
         50% {
-          color: #ff0033;
-          text-shadow: 0 0 10px #ff0033, 0 0 20px #ff0033;
-        }
-        75% {
-          text-shadow: 0 0 20px #ff0033, 0 0 40px #ff0033;
+          border-color: #ff0033;
+          box-shadow: 0 0 20px #ff0033, 0 0 40px #ff0033;
         }
         100% {
-          color: #00ffee;
-          text-shadow: 0 0 10px #00ffee, 0 0 20px #00ffee;
+          border-color: #00ffee;
+          box-shadow: 0 0 20px #00ffee, 0 0 40px #00ffee;
         }
       }
 
@@ -63,7 +57,7 @@
     <h1>Hisham’s Website</h1>
     <p>
       My name is <b>Hisham Mohiuddin.</b> <br>
-      Ik this website isn't much yet, but I’m just in 11th and tryna make it better 😭🙃 <br>
+      Ik this website isn't much yet, but I’m just in 11th ad tryna make it better 😭🙃 <br>
       I’m tryna make this better 🙃 <br>
       Lawyer goal, CS backup!
     </p>
