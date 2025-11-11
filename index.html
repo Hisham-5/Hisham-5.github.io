@@ -1,97 +1,70 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hisham’s Website</title>
     <style>
-      /* --- Base style --- */
       body {
-        background-color: #0a0a0a; /* dark bg */
-        color: #e0e0e0; /* light text */
+        background-color: #0a0a0a;
+        color: #e0e0e0;
         font-family: Arial, sans-serif;
         text-align: center;
         padding: 60px;
-        border: 3px solid #ff0033; /* red border */
-        box-shadow: 0 0 20px #ff0033; /* red glow */
+        border: 3px solid #00ffee;
+        box-shadow: 0 0 20px #00ffee;
         margin: 40px;
-        border-radius: 12px;
-        animation: pulseGlow 3s infinite alternate; /* border glow anim */
       }
 
       h1 {
-        color: #ffffff; /* white text */
-        text-shadow: 0 0 10px #ffffff, 0 0 30px #ffffff; /* glowing white effect */
-        animation: pulseWhite 2.5s infinite alternate; /* white glow animation */
+        color: #00ffee;
+        text-shadow: 0 0 10px #00ffee, 0 0 20px #00ffee;
+        animation: glowShift 10s infinite ease-in-out;
+      }
+
+      /* The color + glow pulsing animation */
+      @keyframes glowShift {
+        0% {
+          color: #00ffee;
+          text-shadow: 0 0 10px #00ffee, 0 0 20px #00ffee;
+        }
+        25% {
+          text-shadow: 0 0 20px #00ffee, 0 0 40px #00ffee;
+        }
+        50% {
+          color: #ff0033;
+          text-shadow: 0 0 10px #ff0033, 0 0 20px #ff0033;
+        }
+        75% {
+          text-shadow: 0 0 20px #ff0033, 0 0 40px #ff0033;
+        }
+        100% {
+          color: #00ffee;
+          text-shadow: 0 0 10px #00ffee, 0 0 20px #00ffee;
+        }
       }
 
       p {
         line-height: 1.6;
-        max-width: 600px;
-        margin: 0 auto;
       }
 
-      /* --- Border animation --- */
-      @keyframes pulseGlow {
-        from {
-          box-shadow: 0 0 10px #ff0033;
-        }
-        to {
-          box-shadow: 0 0 40px #ff0033;
-        }
-      }
-
-      /* --- White text animation --- */
-      @keyframes pulseWhite {
-        from {
-          text-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff;
-        }
-        to {
-          text-shadow: 0 0 20px #ffffff, 0 0 40px #ffffff;
-        }
-      }
-
-      /* --- RESPONSIVE SECTION --- */
-      @media (max-width: 768px) {
+      @media (max-width: 600px) {
         body {
           padding: 30px;
           margin: 20px;
+          font-size: 14px;
         }
-
         h1 {
-          font-size: 1.8rem;
-        }
-
-        p {
-          font-size: 1rem;
-          max-width: 90%;
-        }
-      }
-
-      @media (max-width: 480px) {
-        body {
-          padding: 20px;
-          margin: 10px;
-          border-width: 2px;
-        }
-
-        h1 {
-          font-size: 1.5rem;
-        }
-
-        p {
-          font-size: 0.9rem;
+          font-size: 24px;
         }
       }
     </style>
   </head>
 
   <body>
-    <h1>⚡ Hisham’s Website ⚡</h1>
+    <h1>Hisham’s Website</h1>
     <p>
-      My name is <b>Hisham Mohiuddin.</b><br>
-      Ik this website isn't much yet, but I’m just in 11th and tryna make it better 😭🙃<br>
-      I’m learning as I go 🙃<br>
+      My name is <b>Hisham Mohiuddin.</b> <br>
+      Ik this website isn't much yet, but I’m just in 11th and tryna make it better 😭🙃 <br>
+      I’m tryna make this better 🙃 <br>
       Lawyer goal, CS backup!
     </p>
   </body>
