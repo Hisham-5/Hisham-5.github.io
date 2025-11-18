@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Team</title>
+
+    <style>
+        body {
+            background: #000;
+            margin: 0;
+            padding: 0;
+        }
+
+        .images {
+            width: 100%;
+            padding: 40px 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 60px;
+            list-style: none;
+        }
+
+        /* PLAYER COLORS */
+        .alvarez { --color: #6ecbff; }
+        .haaland { --color: #ffe44c; }
+        .kdb     { --color: #8fe3ff; }
+        .mbappe  { --color: #c07bff; }
+        .pedri   { --color: #ff9f40; }
+
+        .player img {
+            width: 260px;
+            border-radius: 12px;
+            filter: drop-shadow(0 0 18px var(--color));
+            transition: 0.25s ease;
+        }
+
+        .player img:hover {
+            filter: drop-shadow(0 0 28px var(--color));
+            transform: scale(1.05);
+        }
+
+        /* Music button */
+        #musicBtn {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            padding: 12px 18px;
+            background: #111;
+            border: 1px solid #444;
+            border-radius: 10px;
+            font-size: 16px;
+            color: white;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+        #musicBtn:hover {
+            background: #222;
+        }
+    </style>
+</head>
+
+<body>
+
+    <audio id="bgMusic" loop>
+        <source src= "C:\Users\Admin\Music\montagem.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- button to start music -->
+    <button id="musicBtn">Play Phonk 💀</button>
+
+    <script>
+        let music = document.getElementById("bgMusic");
+        let btn = document.getElementById("musicBtn");
+
+        btn.onclick = () => {
+            if (music.paused) {
+                music.play();
+                btn.innerText = "Pause Music";
+            } else {
+                music.pause();
+                btn.innerText = "Play Chill Vibes";
+            }
+        };
+    </script>
+
+    <ul class="images">
+
+        <li class="player alvarez">
+            <img src="C:\Users\Admin\Documents\Classes\images\alvarez.webp">
+        </li>
+
+        <li class="player haaland">
+            <img src="C:\Users\Admin\Documents\Classes\images\haaland.webp">
+        </li>
+
+        <li class="player kdb">
+            <img src="C:\Users\Admin\Documents\Classes\images\kdb.webp">
+        </li>
+
+        <li class="player mbappe">
+            <img src="C:\Users\Admin\Documents\Classes\images\mbappe.webp">
+        </li>
+
+        <li class="player pedri">
+            <img src="C:\Users\Admin\Documents\Classes\images\Pedri.webp">
+        </li>
+
+    </ul>
+
+</body>
+</html>
